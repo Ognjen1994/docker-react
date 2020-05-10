@@ -9,6 +9,7 @@ script:
     - docker run -e CI=true ognjen/docker-react npm run test
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "us-west-1"
   app: "docker"
