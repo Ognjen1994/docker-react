@@ -5,6 +5,9 @@ services:
 before_install:
     - docker build -t ognjen/docker-react -f Dockerfile.dev .
 
+script:
+    - echo "no tests!"
+
 deploy:
   edge: true
   provider: elasticbeanstalk
